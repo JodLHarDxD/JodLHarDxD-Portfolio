@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
@@ -92,24 +91,6 @@ const headingVariant = {
     y: 0,
     transition: { duration: 1.2, delay: i * 0.15, ease: [0.16, 1, 0.3, 1] as const },
   }),
-};
-
-const cardVariant = {
-  hidden: { opacity: 0, y: 80 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 1, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] as const },
-  }),
-};
-
-const imageVariant = {
-  hidden: { scale: 1.15, opacity: 0 },
-  visible: {
-    scale: 1,
-    opacity: 1,
-    transition: { duration: 1.4, ease: [0.16, 1, 0.3, 1] as const },
-  },
 };
 
 export default function ProjectsGrid() {
